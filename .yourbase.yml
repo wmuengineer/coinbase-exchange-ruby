@@ -9,11 +9,12 @@ build_targets:
     commands:
       - gem install bundler -v 1.8
       - bundle install
+      - rake spec
 
 ci:
   builds:
     - name: android_build
       build_target: default
-      commands:
-        - rake spec
+
+
 
