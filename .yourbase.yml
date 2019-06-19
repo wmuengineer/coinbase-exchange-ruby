@@ -1,0 +1,17 @@
+dependencies:
+  build:
+    - ruby:2.6.0
+
+ 
+
+build_targets:
+  - name: default
+    commands:
+      - gem install bundler -v 1.8
+      - bundle install
+
+ci:
+  builds:
+    - name: android_build
+      build_target: default
+
