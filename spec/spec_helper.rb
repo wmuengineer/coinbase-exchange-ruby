@@ -1,5 +1,3 @@
-require 'simplecov'
-SimpleCov.start
 require 'bundler/setup'
 require 'webmock/rspec'
 require 'em-http'
