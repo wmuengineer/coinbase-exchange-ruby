@@ -9,8 +9,8 @@ build_targets:
       - bundle install
       - rspec
 
-    # tags:
-    #  channel: experimental
+    tags:
+     channel: experimental
 
 ci:
   builds:
