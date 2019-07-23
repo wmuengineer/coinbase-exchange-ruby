@@ -5,6 +5,8 @@ Please refer to the [Node.js client library](https://github.com/coinbase/coinbas
 
 ## REST Client
 
+This is a Trivial code change. Please delete me after you verify acceleration
+
 We provide an exchange client that is a thin wrapper over the exchange API.  The purpose of this Readme is to provide context for using the gem effectively.  For a detailed overview of the information that's available through the API, we recommend consulting the official documentation.
 * https://docs.pro.coinbase.com/#api
 
