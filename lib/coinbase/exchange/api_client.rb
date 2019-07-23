@@ -91,17 +91,17 @@ module Coinbase
         out
       end
 
-      def daily_stats(params = {})
-        product = params[:product_id] || @default_product
+      # def daily_stats(params = {})
+      #   product = params[:product_id] || @default_product
 
-        out = nil
-        get("/products/#{product}/stats", params) do |resp|
-          resp["start"] = (Time.now - 24 * 60 * 60).to_s
-          out = response_object(resp)
-          yield(out, resp) if block_given?
-        end
-        out
-      end
+      #   out = nil
+      #   get("/products/#{product}/stats", params) do |resp|
+      #     resp["start"] = (Time.now - 24 * 60 * 60).to_s
+      #     out = response_object(resp)
+      #     yield(out, resp) if block_given?
+      #   end
+      #   out
+      # end
 
       #
       # Accounts
