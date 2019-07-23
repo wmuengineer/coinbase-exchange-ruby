@@ -19,14 +19,14 @@ module Coinbase
       #
       # Market Data
       #
-      # def currencies(params = {})
-      #   out = nil
-      #   get("/currencies", params) do |resp|
-      #     out = response_collection(resp)
-      #     yield(out, resp) if block_given?
-      #   end
-      #   out
-      # end
+      def currencies(params = {})
+        out = nil
+        get("/currencies", params) do |resp|
+          out = response_collection(resp)
+          yield(out, resp) if block_given?
+        end
+        out
+      end
 
       def products(params = {})
         out = nil
@@ -124,14 +124,14 @@ module Coinbase
         out
       end
 
-      # def account_history(id, params = {})
-      #   out = nil
-      #   get("/accounts/#{id}/ledger", params, paginate: true) do |resp|
-      #     out = response_collection(resp)
-      #     yield(out, resp) if block_given?
-      #   end
-      #   out
-      # end
+      def account_history(id, params = {})
+        out = nil
+        get("/accounts/#{id}/ledger", params, paginate: true) do |resp|
+          out = response_collection(resp)
+          yield(out, resp) if block_given?
+        end
+        out
+      end
 
       def account_holds(id, params = {})
         out = nil
