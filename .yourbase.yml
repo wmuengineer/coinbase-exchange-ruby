@@ -7,12 +7,8 @@ build_targets:
     commands:
       - gem install bundler -v 1.8
       - bundle install
-      - rspec ./spec/error_spec.rb
-      - rspec ./spec/async_spec.rb
-      - rspec ./spec/response_spec.rb
-      - rspec ./spec/synchronous_spec.rb
-      - rspec ./spec/websocket_spec.rb
-      
+      - rspec
+
     tags:
      channel: experimental
 
