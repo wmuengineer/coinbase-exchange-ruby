@@ -9,9 +9,6 @@ build_targets:
       - bundle install
       - rspec
 
-    tags:
-     channel: experimental
-
 ci:
   builds:
     - name: tests
