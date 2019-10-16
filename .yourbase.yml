@@ -7,13 +7,11 @@ build_targets:
     commands:
       - gem install bundler -v 1.8
       - bundle install
-      - rspec
+      - bundle exec rspec
 
 
 ci:
   builds:
     - name: tests
       build_target: default
-
-#test commit
 
