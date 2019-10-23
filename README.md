@@ -402,6 +402,8 @@ rest_api.server_time do |resp|
 end
 ```
 
+Maybe this happens only on remote builds
+
 ## Websocket Client
 
 We recommend reading the official websocket documentation before proceeding.
